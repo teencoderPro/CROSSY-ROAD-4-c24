@@ -14,7 +14,7 @@ function preload()
  carAnimation2=loadAnimation("images/car2.png");
  playerAnimation=loadAnimation("images/Player-03.png");
  logAnimation=loadAnimation("images/log2.png");
- cityAnimation=loadAnimation("images/city1.png","images/city2.png")
+ cityAnimation=loadAnimation("images/city1.png")
 }
  
 function setup() {
@@ -22,7 +22,7 @@ function setup() {
   carGroup1 = new Group();
   logGroup1 = new Group();
   
- city = createSprite(width/2, -1500);
+ city = createSprite(width/2, -1600);
  city.addAnimation("city",cityAnimation);
 
   for (var i=0;i<6;i++){;
@@ -89,7 +89,7 @@ if (gameState==="Win") {
   stroke("green");
   fill("green");
   textSize(40);
-  text("Congrulations! You Made It.",width/2-250,-1700);
+  text("Congrulations! You Made It.",width/2-250,-1800);
   carGroup1.destroyEach();
   logGroup1.destroyEach();
 }
